@@ -1,0 +1,42 @@
+footer {
+    background-color: #363636;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    position: sticky bottom;
+
+    .footer-left {
+        a {
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-weight: 300;
+            font-size: 28px;
+        }
+
+        p {
+            color: white;
+            font-weight: 300;
+            font-size: 13px;
+        }
+    }
+
+    .footer-right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            padding: 5px;
+
+            i {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
