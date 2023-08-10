@@ -1,8 +1,5 @@
 @media (max-width: 991px) {
-    section {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
+
 
     .row {
         flex-direction: column;
@@ -57,7 +54,7 @@
     }
 
     .footer-right{
-        justify-content: center;
-        gap: 10px;
+        display: block;
+        gap: -40px;
     }
 }

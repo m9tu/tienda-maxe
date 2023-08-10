@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+body {
+  font-family: 'Roboto', sans-serif !important; }
+
 html {
   font-size: 62,5%;
   font-family: 'Roboto', sans-serif; }
@@ -9,7 +12,11 @@ html {
   box-sizing: border-box; }
 
 header nav {
-  background-color: black; }
+  background-color: white; }
+  header nav .nav-link {
+    color: black !important;
+    font-size: 17px;
+    font-weight: 500; }
 
 /**-----------------------------MAIN SECTION-----------------------**/
 main section #slider {
@@ -67,13 +74,12 @@ section .accesorios-index figure {
   margin: 25px;
   text-decoration: none;
   color: black; }
+  .latest-news-index a h2 {
+    text-align: center;
+    font-size: 37px;
+    font-weight: 300; }
 
-.latest-news-index a h2 {
-  text-align: center;
-  font-size: 37px;
-  font-weight: 300; }
-
-.latest-news-container {
+.latest-news-index .latest-news-container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; }
@@ -100,11 +106,16 @@ main .productos-wrap {
       height: 500px;
       text-align: center;
       border: 2px solid white;
-      margin: 20px; }
+      margin: 20px;
+      transition: 0.5s; }
       main .productos-wrap .productos div a {
         text-decoration: none;
         color: black; }
+        main .productos-wrap .productos div a img:hover {
+          transform: scale(1.1);
+          z-index: 1; }
         main .productos-wrap .productos div a p {
+          padding-top: 14px;
           font-size: 20px;
           font-weight: 800;
           color: #313131; }
@@ -117,18 +128,6 @@ main .productos-wrap {
           border-radius: 30px; }
 
 /**-----------------------------PAGINA NEWS-----------------------**/
-.news-banner-section {
-  padding-top: 63px; }
-
-.news-banner {
-  position: relative;
-  width: 100%;
-  margin: 0;
-  left: 0; }
-
-.news-banner figure img {
-  width: 100%; }
-
 .news-main {
   min-height: 100vh;
   max-width: 100vw;
@@ -204,12 +203,12 @@ article p:first-child::first-line {
   font-weight: 700;
   font-size: 25px; }
 
-.cards {
+.cards-news {
   columns: 25ch 3;
   gap: 40px;
   margin-bottom: 40px; }
 
-.card {
+.card-news {
   font-size: 20px;
   border: 1px solid;
   padding: 10px 20px;
@@ -388,9 +387,6 @@ footer {
         font-size: 24px; }
 
 @media (max-width: 991px) {
-  section {
-    padding-top: 50px;
-    padding-bottom: 50px; }
   .row {
     flex-direction: column; }
   .contact-info {
@@ -423,5 +419,5 @@ footer {
     justify-content: center;
     gap: 26px; }
   .footer-right {
-    justify-content: center;
-    gap: 10px; } }
+    display: block;
+    gap: -40px; } }
