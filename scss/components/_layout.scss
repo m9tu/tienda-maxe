@@ -190,7 +190,6 @@ main {
 
 /**-----------------------------PAGINA NEWS-----------------------**/
 
-
 .news-main {
     min-height: 100vh;
     max-width: 100vw;
@@ -243,7 +242,6 @@ main {
     padding-right: 10px;
 }
 
-
 /* HOME */
 .home {
     display: grid;
@@ -271,7 +269,6 @@ main {
 article>p {
     font-size: 20px;
     margin-bottom: 20px;
-
     columns: 3 25ch;
     column-gap: 40px;
     hyphens: auto;
@@ -281,7 +278,6 @@ article p:first-child::first-line {
     font-weight: 700;
     font-size: 25px;
 }
-
 
 .cards-news {
     columns: 25ch 3;
@@ -295,6 +291,7 @@ article p:first-child::first-line {
     padding: 10px 20px;
     break-inside: avoid;
 }
+
 
 /**-----------------------------Contacto page-----------------------**/
 
@@ -327,7 +324,7 @@ article p:first-child::first-line {
     padding-bottom: 50px;
 }
 
-.container {
+.container-contacto {
     max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
@@ -461,4 +458,67 @@ article p:first-child::first-line {
 .contact-form .input-box input[type="submit"]:hover {
     background: #FFF;
     color: #000000;
+}
+
+/**-----------------------------CONOCENOS page-----------------------**/
+
+.conocenos-main{
+    padding-top: 50px;
+    padding-bottom: 130px;
+    .heading{
+        text-align: center;
+        margin: 25px;
+        h1{
+            color: #000000;
+            font-weight: 300;
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        p{
+            color: #000000;
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+    }
+    .about-us{
+        display: flex;
+        align-items: center;
+        width: 85%;
+        margin: auto;
+        img{
+        flex: 0 50%;
+        max-width: 50%;
+        height: auto;
+        }
+        .content{
+            padding: 35px;
+
+            h2{
+                color: black;
+                font-weight: 500;
+                font-size: 24px;
+                margin: 15px 0px;
+            }
+            p{
+                color: black;
+                font-size: 18px;
+                line-height: 1.5;
+                margin:15px 0px ;
+            }
+            .read-more-btn{
+                display: inline-block;
+                color: #FFF;
+                background-color: #000000;
+                border: none;
+                border-radius: 5px;
+                padding: 12px 20px;
+                font-size: 18px;
+                cursor: pointer;
+                transition: 0.2 ease;
+                &:hover{
+                    background-color: #1b1b1b;
+                }
+            }
+        }
+    }
 }

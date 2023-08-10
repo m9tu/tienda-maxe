@@ -36,6 +36,21 @@
     }
 }
 
+@media(max-width: 768px){
+    .about-us{
+        flex-direction: column;
+    }
+    .about-us img{
+        flex: 0 100%;
+        max-width: 100%;
+    }
+    .content{
+        flex: 0 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+}
+
 @media (max-width: 650px) {
     .lists {
         grid-template-columns: 1fr;

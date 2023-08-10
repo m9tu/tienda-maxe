@@ -241,7 +241,7 @@ article p:first-child::first-line {
   padding-top: 50px;
   padding-bottom: 50px; }
 
-.container {
+.container-contacto {
   max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
@@ -357,6 +357,56 @@ article p:first-child::first-line {
   background: #FFF;
   color: #000000; }
 
+/**-----------------------------CONOCENOS page-----------------------**/
+.conocenos-main {
+  padding-top: 50px;
+  padding-bottom: 130px; }
+  .conocenos-main .heading {
+    text-align: center;
+    margin: 25px; }
+    .conocenos-main .heading h1 {
+      color: #000000;
+      font-weight: 300;
+      font-size: 50px;
+      margin-bottom: 10px; }
+    .conocenos-main .heading p {
+      color: #000000;
+      font-size: 20px;
+      margin-bottom: 50px; }
+  .conocenos-main .about-us {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: auto; }
+    .conocenos-main .about-us img {
+      flex: 0 50%;
+      max-width: 50%;
+      height: auto; }
+    .conocenos-main .about-us .content {
+      padding: 35px; }
+      .conocenos-main .about-us .content h2 {
+        color: black;
+        font-weight: 500;
+        font-size: 24px;
+        margin: 15px 0px; }
+      .conocenos-main .about-us .content p {
+        color: black;
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 15px 0px; }
+      .conocenos-main .about-us .content .read-more-btn {
+        display: inline-block;
+        color: #FFF;
+        background-color: #000000;
+        border: none;
+        border-radius: 5px;
+        padding: 12px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 0.2 ease; }
+        .conocenos-main .about-us .content .read-more-btn:hover {
+          background-color: #1b1b1b; }
+
 footer {
   background-color: #363636;
   display: flex;
@@ -406,6 +456,17 @@ footer {
     grid-template-columns: 1fr 5fr; }
   .card {
     margin-bottom: 40px; } }
+
+@media (max-width: 768px) {
+  .about-us {
+    flex-direction: column; }
+  .about-us img {
+    flex: 0 100%;
+    max-width: 100%; }
+  .content {
+    flex: 0 100%;
+    max-width: 100%;
+    padding: 15px; } }
 
 @media (max-width: 650px) {
   .lists {

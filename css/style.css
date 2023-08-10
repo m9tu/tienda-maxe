@@ -229,21 +229,6 @@ footer {
 /**---------------------------------NEWS PAGE----------------------------------**/
 
 
-.news-banner-section {
-    padding-top: 63px;
-}
-
-.news-banner {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    left: 0;
-}
-
-.news-banner figure img {
-    width: 100%;
-}
-
 .news-main {
     min-height: 100vh;
     max-width: 100vw;
@@ -296,7 +281,6 @@ footer {
     padding-right: 10px;
 }
 
-
 /* HOME */
 .home {
     display: grid;
@@ -324,7 +308,6 @@ footer {
 article>p {
     font-size: 20px;
     margin-bottom: 20px;
-
     columns: 3 25ch;
     column-gap: 40px;
     hyphens: auto;
@@ -335,21 +318,18 @@ article p:first-child::first-line {
     font-size: 25px;
 }
 
-
-.cards {
+.cards-news {
     columns: 25ch 3;
     gap: 40px;
     margin-bottom: 40px;
 }
 
-.card {
+.card-news {
     font-size: 20px;
     border: 1px solid;
     padding: 10px 20px;
     break-inside: avoid;
 }
-
-
 
 /**------------------------------------------------CONTACTO PAGE----------------------**/
 
@@ -585,18 +565,18 @@ article p:first-child::first-line {
     }
 }
 
-@media (max-width:450px){
-    footer{
+@media (max-width:450px) {
+    footer {
         flex-direction: column;
     }
 
-    .footer-left{
+    .footer-left {
         display: flex;
         justify-content: center;
         gap: 26px;
     }
 
-    .footer-right{
+    .footer-right {
         justify-content: center;
         gap: 10px;
     }
