@@ -106,18 +106,17 @@ section {
     a {
         margin: 25px;
         text-decoration: none;
-        color: black;
+        color: nth($paleta-colores, 2);
 
         h2 {
             text-align: center;
-            font-size: 37px;
+            font-size: nth($font-size, 3);
             font-weight: 300;
         }
     }
 
     .latest-news-container {
-        display: flex;
-        justify-content: space-around;
+        @include flex (flex, space-around, center);
         flex-wrap: wrap;
     }
 }
@@ -137,13 +136,11 @@ main {
             text-align: center;
             padding-top: 50px;
             padding-bottom: 60px;
-            color: rgb(49, 49, 49);
+            color: nth($paleta-colores, 3);
         }
 
         .productos {
-            display: flex;
-            justify-content: space-evenly;
-            align-content: center;
+            @include flex (flex, space-evenly, center);
             flex-wrap: wrap;
             padding-bottom: 40px;
 
@@ -151,13 +148,13 @@ main {
                 width: 321px;
                 height: 500px;
                 text-align: center;
-                border: 2px solid white;
+                border: 2px solid nth($paleta-colores, 2);
                 margin: 20px;
                 transition: 0.5s;
 
                 a {
                     text-decoration: none;
-                    color: black;
+                    color: nth($paleta-colores, 1);
 
                     img {
                         &:hover {
@@ -168,9 +165,9 @@ main {
 
                     p {
                         padding-top: 14px;
-                        font-size: 20px;
+                        font-size: nth($font-size, 2);
                         font-weight: 800;
-                        color: rgb(49, 49, 49);
+                        color: nth($paleta-colores, 3);
                     }
 
                     button {
@@ -225,7 +222,7 @@ main {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid nth($paleta-colores, 4);
     padding-bottom: 10px;
 }
 
@@ -238,7 +235,7 @@ main {
 .sub-heading span {
     color: #555;
     font-weight: 300;
-    border-right: 1px solid #ccc;
+    border-right: 1px solid nth($paleta-colores, 4);
     padding-right: 10px;
 }
 
@@ -276,7 +273,7 @@ article>p {
 
 article p:first-child::first-line {
     font-weight: 700;
-    font-size: 25px;
+    font-size: nth($font-size, 2);
 }
 
 .cards-news {
@@ -298,10 +295,8 @@ article p:first-child::first-line {
 .body-contacto {
     min-height: 100vh;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(/img/main.jpg);
+    @include flex (flex, center, center);
+    background-image: url(../img/contacto-bck.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -338,21 +333,19 @@ article p:first-child::first-line {
 }
 
 .section-header h2 {
-    color: #FFF;
+    color: nth($paleta-colores, 2);
     font-weight: bold;
     font-size: 3em;
     margin-bottom: 20px;
 }
 
 .section-header p {
-    color: #FFF;
+    color: nth($paleta-colores, 2);
 }
 
 .row {
-    display: flex;
+    @include flex (flex, space-between, center);
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .contact-info {
@@ -367,7 +360,7 @@ article p:first-child::first-line {
 .contact-info-icon {
     height: 70px;
     width: 70px;
-    background-color: #fff;
+    background-color: nth($paleta-colores, 2);
     text-align: center;
     border-radius: 50%;
 }
@@ -382,18 +375,18 @@ article p:first-child::first-line {
 }
 
 .contact-info-content h4 {
-    color: #ffffff;
+    color: nth($paleta-colores, 2);
     font-size: 1.4em;
     margin-bottom: 5px;
 }
 
 .contact-info-content p {
-    color: #FFF;
+    color: nth($paleta-colores, 2);
     font-size: 1em;
 }
 
 .contact-form {
-    background-color: #fff;
+    background-color: nth($paleta-colores, 2);
     padding: 40px;
     width: 45%;
     padding-bottom: 20px;
@@ -439,7 +432,7 @@ article p:first-child::first-line {
 .contact-form .input-box input:focus~span,
 .contact-form .input-box textarea:focus~span {
     color: #e91e63;
-    font-size: 12px;
+    font-size: nth($font-size, 1);
     transform: translateY(-20px);
 }
 
@@ -457,7 +450,7 @@ article p:first-child::first-line {
 
 .contact-form .input-box input[type="submit"]:hover {
     background: #FFF;
-    color: #000000;
+    color: nth($paleta-colores, 1);
 }
 
 /**-----------------------------CONOCENOS page-----------------------**/
@@ -469,13 +462,13 @@ article p:first-child::first-line {
         text-align: center;
         margin: 25px;
         h1{
-            color: #000000;
+            color: nth($paleta-colores, 1);
             font-weight: 300;
-            font-size: 50px;
+            font-size: nth($font-size, 4);
             margin-bottom: 10px;
         }
         p{
-            color: #000000;
+            color: nth($paleta-colores, 1);
             font-size: 20px;
             margin-bottom: 50px;
         }
@@ -494,21 +487,21 @@ article p:first-child::first-line {
             padding: 35px;
 
             h2{
-                color: black;
+                color: nth($paleta-colores, 1);
                 font-weight: 500;
-                font-size: 24px;
+                font-size: nth($font-size, 2);
                 margin: 15px 0px;
             }
             p{
-                color: black;
+                color: nth($paleta-colores, 1);
                 font-size: 18px;
                 line-height: 1.5;
                 margin:15px 0px ;
             }
             .read-more-btn{
                 display: inline-block;
-                color: #FFF;
-                background-color: #000000;
+                color: nth($paleta-colores, 2);
+                background-color: nth($paleta-colores, 1);
                 border: none;
                 border-radius: 5px;
                 padding: 12px 20px;

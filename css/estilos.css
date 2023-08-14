@@ -73,15 +73,16 @@ section .accesorios-index figure {
 .latest-news-index a {
   margin: 25px;
   text-decoration: none;
-  color: black; }
+  color: white; }
   .latest-news-index a h2 {
     text-align: center;
-    font-size: 37px;
+    font-size: 36px;
     font-weight: 300; }
 
 .latest-news-index .latest-news-container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap; }
 
 /**-----------------------------PAGINA PRODUCTOS-----------------------**/
@@ -94,11 +95,11 @@ main .productos-wrap {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 60px;
-    color: #313131; }
+    color: #454955; }
   main .productos-wrap .productos {
     display: flex;
     justify-content: space-evenly;
-    align-content: center;
+    align-items: center;
     flex-wrap: wrap;
     padding-bottom: 40px; }
     main .productos-wrap .productos div {
@@ -116,9 +117,9 @@ main .productos-wrap {
           z-index: 1; }
         main .productos-wrap .productos div a p {
           padding-top: 14px;
-          font-size: 20px;
+          font-size: 24px;
           font-weight: 800;
-          color: #313131; }
+          color: #454955; }
         main .productos-wrap .productos div a button {
           font-size: 1rem;
           border-width: 1px;
@@ -158,7 +159,7 @@ main .productos-wrap {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #d8d9da;
   padding-bottom: 10px; }
 
 .sub-heading p {
@@ -169,7 +170,7 @@ main .productos-wrap {
 .sub-heading span {
   color: #555;
   font-weight: 300;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #d8d9da;
   padding-right: 10px; }
 
 /* HOME */
@@ -201,7 +202,7 @@ article > p {
 
 article p:first-child::first-line {
   font-weight: 700;
-  font-size: 25px; }
+  font-size: 24px; }
 
 .cards-news {
   columns: 25ch 3;
@@ -221,7 +222,7 @@ article p:first-child::first-line {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/img/main.jpg);
+  background-image: url(../img/contacto-bck.jpg);
   background-size: cover;
   background-position: center;
   position: relative; }
@@ -253,19 +254,19 @@ article p:first-child::first-line {
   text-align: center; }
 
 .section-header h2 {
-  color: #FFF;
+  color: white;
   font-weight: bold;
   font-size: 3em;
   margin-bottom: 20px; }
 
 .section-header p {
-  color: #FFF; }
+  color: white; }
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-between; }
+  flex-wrap: wrap; }
 
 .contact-info {
   width: 50%; }
@@ -277,7 +278,7 @@ article p:first-child::first-line {
 .contact-info-icon {
   height: 70px;
   width: 70px;
-  background-color: #fff;
+  background-color: white;
   text-align: center;
   border-radius: 50%; }
 
@@ -289,16 +290,16 @@ article p:first-child::first-line {
   margin-left: 20px; }
 
 .contact-info-content h4 {
-  color: #ffffff;
+  color: white;
   font-size: 1.4em;
   margin-bottom: 5px; }
 
 .contact-info-content p {
-  color: #FFF;
+  color: white;
   font-size: 1em; }
 
 .contact-form {
-  background-color: #fff;
+  background-color: white;
   padding: 40px;
   width: 45%;
   padding-bottom: 20px;
@@ -355,7 +356,7 @@ article p:first-child::first-line {
 
 .contact-form .input-box input[type="submit"]:hover {
   background: #FFF;
-  color: #000000; }
+  color: black; }
 
 /**-----------------------------CONOCENOS page-----------------------**/
 .conocenos-main {
@@ -365,12 +366,12 @@ article p:first-child::first-line {
     text-align: center;
     margin: 25px; }
     .conocenos-main .heading h1 {
-      color: #000000;
+      color: black;
       font-weight: 300;
-      font-size: 50px;
+      font-size: 48px;
       margin-bottom: 10px; }
     .conocenos-main .heading p {
-      color: #000000;
+      color: black;
       font-size: 20px;
       margin-bottom: 50px; }
   .conocenos-main .about-us {
@@ -396,8 +397,8 @@ article p:first-child::first-line {
         margin: 15px 0px; }
       .conocenos-main .about-us .content .read-more-btn {
         display: inline-block;
-        color: #FFF;
-        background-color: #000000;
+        color: white;
+        background-color: black;
         border: none;
         border-radius: 5px;
         padding: 12px 20px;
@@ -408,7 +409,7 @@ article p:first-child::first-line {
           background-color: #1b1b1b; }
 
 footer {
-  background-color: #363636;
+  background-color: #454955;
   display: flex;
   padding: 20px;
   justify-content: space-around;
@@ -418,15 +419,15 @@ footer {
     text-decoration: none;
     color: white;
     font-weight: 300;
-    font-size: 28px; }
+    font-size: 24px; }
   footer .footer-left p {
     color: white;
     font-weight: 300;
-    font-size: 13px; }
+    font-size: 12px; }
   footer .footer-right {
     display: flex;
-    align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
     footer .footer-right a {
       text-align: center;
       text-decoration: none;
@@ -480,5 +481,4 @@ footer {
     justify-content: center;
     gap: 26px; }
   .footer-right {
-    display: block;
-    gap: -40px; } }
+    display: block; } }

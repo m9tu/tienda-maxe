@@ -1,8 +1,8 @@
 header{
     nav{
-        background-color: rgb(255, 255, 255);
+        background-color: nth($paleta-colores, 2);
         .nav-link{
-            color: black !important;
+            color: nth($paleta-colores, 1) !important;
             font-size: 17px;
             font-weight: 500;
         }
