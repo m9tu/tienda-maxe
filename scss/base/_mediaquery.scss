@@ -1,6 +1,28 @@
-@media (max-width: 991px) {
+@media(max-width: 1600px) {
 
+    //CONOCENOS
+    .contenido {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+}
 
+@media(max-width: 1250px) {
+    .news-container {
+        .news-box {
+            width: 800px;
+        }
+    }
+}
+
+@media(max-width: 1100px) {
+    .news-box {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    //CONTACTANOS
     .row {
         flex-direction: column;
     }
@@ -16,59 +38,198 @@
 }
 
 
-@media (max-width: 950px) {
-    .home {
-        grid-template-columns: 1fr;
+@media (max-width: 768px) {
+
+    //INDEX CARROUSEL
+    #slider figure a img {
+        height: 40vh;
+        object-fit: cover;
+        object-position: center;
     }
 
-    .lists {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
+    //MOUSE IMG INDEX
+    .mouse-main1 {
+        .mouse-index {
+            figure {
+                a {
+                    img {
+                        height: 40vh;
+                        width: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+            }
+        }
     }
 
-    .list {
-        grid-template-columns: 1fr 5fr;
+    //ACCESORIOS IMG INDEX
+    .accesorios-main1 {
+        .accesorios-index {
+            figure {
+                a {
+                    img {
+                        height: 40vh;
+                        width: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+            }
+        }
     }
 
-    .card {
-        margin-bottom: 40px;
+    //NEWS INDEX
+    .latest-news-index a {
+        margin: 10px;
     }
-}
 
-@media(max-width: 768px){
-    .about-us{
+    .latest-news-container {
+        .card {
+            margin: 20px;
+        }
+    }
+
+    .about-us {
         flex-direction: column;
     }
-    .about-us img{
+
+    .about-us img {
         flex: 0 100%;
         max-width: 100%;
     }
-    .content{
+
+    .content {
         flex: 0 100%;
         max-width: 100%;
         padding: 15px;
     }
-}
 
-@media (max-width: 650px) {
-    .lists {
-        grid-template-columns: 1fr;
+    //NEWS SECTION BANNER
+    .news-header {
+        min-height: 30vh;
+        justify-content: center;
+
+        h1 {
+            font-size: nth($font-size, 3);
+            text-align: center;
+            padding-left: 0;
+        }
     }
 }
 
-@media (max-width:450px){
-    footer{
+@media (max-width: 600px) {
+    .news-box {
+        width: 420px !important;
+    }
+}
+
+@media (max-width: 550px) {
+    .news-box {
+        margin: 20px 10px;
+        width: 100%;
+    }
+
+    .news-section {
+        padding: 20px;
+    }
+}
+
+@media (max-width:450px) {
+    //INDEX CARROUSEL
+
+    #slider figure a img {
+        height: 33vh;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    //MOUSE IMG INDEX
+    .mouse-main1 {
+        .mouse-index {
+            figure {
+                a {
+                    img {
+                        height: 33vh;
+                        width: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+            }
+        }
+    }
+
+    //ACCESORIOS IMG INDEX
+    .accesorios-main1 {
+        .accesorios-index {
+            figure {
+                a {
+                    img {
+                        height: 33vh;
+                        width: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .news-box {
+        width: 300px !important;
+    }
+
+    .productos {
+        div {
+            overflow: hidden;
+
+        }
+    }
+
+    footer {
         flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
-    .footer-left{
+    .footer-left {
         display: flex;
         justify-content: center;
         gap: 26px;
     }
 
-    .footer-right{
+    .footer-right {
         display: block;
+    }
+}
+
+@media (max-width:400px) {
+
+    //CONTACTO
+    .container-contacto {
+        padding-top: 20px;
+
+        h2 {
+            font-size: nth($font-size, 3);
+        }
+    }
+
+    //CONOCENOS
+    .contenido {
+        .articulo {
+            h2 {
+                font-size: nth($font-size, 2);
+            }
+        }
+
+        .image-section {
+            img {
+                height: 300px;
+                width: 340px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
     }
 }

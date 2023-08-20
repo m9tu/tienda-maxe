@@ -32,9 +32,13 @@ footer {
             padding: 5px;
 
             i {
+                transition-duration: 0.2s;
                 font-size: nth($font-size, 2);
+
+                &:hover {
+                    transform: scale(1.3);
+                }
             }
         }
     }
 }
-

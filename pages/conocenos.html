@@ -10,9 +10,12 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!---CSS-->
     <link rel="stylesheet" href="../css/estilos.css">
+    <!---ANIMACIONES-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <!---DESCRIPCIÓN-->
-    <meta name="description" content="Libertad sin cables: Eleva tu experiencia informática con nuestra gama de mouses wireless y periféricos innovadores. Conquista la comodidad en Argentina.">
+    <meta name="description"
+        content="Libertad sin cables: Eleva tu experiencia informática con nuestra gama de mouses wireless y periféricos innovadores. Conquista la comodidad en Argentina.">
     <!---KEYWORDS-->
     <meta name="keywords" content="Sobre nosotros, maxe, nueva empresa, mouse, productos, ergonomico, que buscamos">
     <title>Conocenos | MAXE</title>
@@ -29,7 +32,10 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 animate__animated animate__fadeIn">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../pages/news.html">News</a>
                         </li>
@@ -47,19 +53,29 @@
             </div>
         </nav>
     </header>
-    <main class="conocenos-main">
-        <div class="heading">
-            <h1>SOBRE NOSOTROS</h1>
-            <p>Somos MAXE una nueva empresa que busca brindar los mejores productos para nuestros clientes.</p>
-        </div>
-        <div class="about-us">
-            <img src="../img/conocenos-img.jpg" alt="">
-            <div class="content">
-                <h2>Que buscamos en nuestros productos?</h2>
-                <p>Diseñados con precisión y cuidado, nuestros mouses ofrecen un rendimiento excepcional para satisfacer las demandas de profesionales, gamers y usuarios cotidianos por igual. Desde la ergonomía hasta la respuesta precisa, cada detalle se ha pensado meticulosamente para garantizar un control sin igual.</p>
-                <button class="read-more-btn">Leer mas</button>
+    <main>
+        <section>
+            <div class="container-conocenos animate__animated animate__fadeIn animate_slower">
+                <div class="titulo-conocenos">
+                    <h1 class="animate__animated animate__slideInLeft animate_slower">SOBRE NOSOTROS</h1>
+                </div>
+                <div class="contenido">
+                    <div class="articulo">
+                        <h2>
+                            ¿QUIENES SOMOS?
+                        </h2>
+                        <p>Somos una nueva pequeña empresa en Argentina especificada en el sector gaming. Desde mouses
+                            ergonómicos que se adaptan perfectamente a la mano del usuario, hasta pads y gliders de alta
+                            calidad que garantizan movimientos suaves y precisos, en MAXE estamos comprometidos en
+                            proporcionar soluciones que marcan la diferencia.</p>
+                        <a href="" class="boton-leer-mas">Saber Mas</a>
+                    </div>
+                    <div class="image-section">
+                        <img src="../img/conocenos-img.jpg" alt="local de maxe">
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
         <div class="footer-left">
