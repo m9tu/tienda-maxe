@@ -574,16 +574,16 @@ footer {
 
 @media (max-width: 450px) {
   #slider figure a img {
-    height: 33vh;
+    height: 40vh;
     object-fit: cover;
     object-position: center; }
   .mouse-main1 .mouse-index figure a img {
-    height: 33vh;
+    height: 40vh;
     width: 100%;
     object-fit: cover;
     object-position: center; }
   .accesorios-main1 .accesorios-index figure a img {
-    height: 33vh;
+    height: 40vh;
     width: 100%;
     object-fit: cover;
     object-position: center; }
